@@ -1,0 +1,476 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat';
+      font-weight: 300;
+}
+ul,li,a{
+      text-decoration: none;
+      list-style: none;
+      color: white;
+}
+.container{
+      max-width: 1280px;
+      padding: 0 2%;
+      margin: 0 auto;
+}
+.clear{
+      clear: both;
+}
+body{
+      background-color: #f0fcfd;
+}
+.barra{
+      width: 200px;
+      height: 3px;
+      background-color: #01579b;
+      margin-left: 50px;
+}
+div.logo{
+      cursor: pointer;
+      font-size: 30px;
+      color: white;
+      font-weight: lighter;
+}
+header{
+      background-color: #01579b;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 110px;
+}
+nav.desktop ul{
+     display: flex;
+}
+nav.desktop li{
+      padding: 0 20px;
+}
+nav.desktop a{
+      padding: 0 20px;
+      font-size: 16px;
+      text-transform: uppercase;
+}
+nav.desktop a:hover{
+      text-decoration: underline;
+}
+nav.mobile h3{
+      position: absolute;
+      right: 30;
+      top: 40;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+}
+nav.mobile{
+      background: #01579b;
+      display: none;
+      text-align: center;
+}
+nav.mobile ul{
+      display: none;
+}
+nav.mobile li{
+      padding: 15px;
+      border-bottom: 2px solid white;
+      border-right: 2px solid white;
+      border-left: 2px solid white;
+}
+nav.mobile .border{
+      border-top: 2px solid white;
+}
+nav.mobile a{
+      text-transform: uppercase;
+}
+nav.mobile li:hover{
+      background-color: #004174;
+      transition: 1s;
+}
+nav.mobile li:hover > a{
+      font-weight: bold;
+      transition: 1s;
+}
+section.center{
+      background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/bg.jpg");
+      background-size: cover;
+      background-position: center;
+}
+section .content-bg{
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+      max-width: 700px;
+      color: white;
+}
+.content-bg h2{
+      padding-top: 70px;
+      color: #4fc3f7;
+      padding-bottom: 50px;
+      font-size: 36px;
+      text-transform: capitalize;
+}
+.content-bg p{
+      line-height: 23px;
+      font-size: 17px;
+      padding: 0 4% 30px 4%;
+}
+.content-bg input{
+      width: 160px;
+      height: 50px;
+      background-color: #039be5;
+      border: 0;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: white;
+      margin-bottom: 60px;
+      cursor: pointer;
+}
+.content-bg input:hover{
+      background-color: #004174;
+      text-decoration: underline;
+      transition: 0.4s;
+}
+section.experiencia .xp-content .barra{
+      width: 200px;
+      height: 3px;
+      background-color: #01579b;
+      margin-left: 50px;
+}
+section.experiencia .xp-content{
+      padding: 80px 0;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 500px;
+}
+.xp-content h2{
+      font-size: 36px;
+      color: #01579b;
+}
+.xp-box{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      text-align: center;
+}
+.xp-single{
+      width: 100%;
+      padding: 0 4% 60px 4%;
+}
+.xp-single h3{
+      color: #81d4fa;
+      font-size: 40px;
+      padding-bottom: 30px;
+}
+.xp-single p{
+      font-size: 17px;
+      line-height: 23px;
+}
+section.equipe{
+      background-color: #e0f2f1;
+      display: inline-block;
+      min-width: 100% !important;
+}
+.w50time,.w50sobre{
+      float: left;
+      width: 100%;
+      max-width: 50%;
+}
+.equipe .titulobarra{
+      padding: 30px 0;
+}
+.titulobarra .barra{
+      margin-top: 30px;
+      position: relative;
+      right: 50px;
+      max-width: 120px;
+}
+.titulobarra h2{
+      color: #004174;
+      font-weight: normal;
+      font-size: 28px;
+      padding-top: 10px;
+}
+.img-perfil{
+      width: 90px;
+      height: 90px;
+      background-color: #ccc;
+      border-radius: 50%;
+      float: left;
+      margin-right: 30px;
+}
+.descrição-perfil{
+      float: left;
+      margin: 30px 0;
+      max-width: 400px;
+}
+.descrição-perfil h2{
+      font-size: 16px;
+      font-style: italic;
+      font-weight: bold;
+}
+.descrição-perfil p{
+      font-size: 14px;
+      padding: 10px 0;
+}
+.descrição-perfil input{
+      width: 140px;
+      height: 40px;
+      background-color: #004174;
+      border: 0;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: white;
+      cursor: pointer;
+      margin: 10px 0 10px 120px;
+}
+.descrição-perfil input:hover{
+      background-color: #035da1;
+      text-decoration: underline;
+      transition: 0.4s;
+}
+.w50sobre{
+      float: left;
+      padding: 0 2%;
+}
+.w50sobre > .titulobarra{
+      padding: 30px 2%;
+}
+.sobre-content p{
+      line-height: 24px;
+      padding: 25px 2% 60px 2%;
+}
+section.inscreva-se{
+      background-color: #0277bd;
+      margin-bottom: 50px;
+}
+.conteudo-inscreva-se{
+      display: flex;
+      padding: 35px 0;
+      justify-content: space-around;
+}
+.conteudo-inscreva-se h3{
+      font-size: 30px;
+      color: white;
+      float: left;
+      position: relative;
+      top: 3px;
+}
+.conteudo-inscreva-se h2{
+      float: left;
+      color: white;
+      font-weight: normal;
+      font-size: 30px;
+      padding-left: 10px;
+}
+div.inputs input{
+      height: 30px;
+      margin-top: 4px;
+      outline: none;
+      font-weight: normal;
+      border: 0;
+}
+div.inputs > input[type=email]{
+      width: 400px;
+      margin-right: -5px;
+      padding-left: 10px;
+}
+div.inputs > input[type=submit] {
+      width: 140px;
+      color: white;
+      font-size: 18px;
+      background: #01579b;
+      cursor: pointer;
+      position: relative;
+      top: 1px;
+}
+div.inputs > input[type=submit]:hover{
+      background-color: #004174;
+}
+section.cards{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+}
+.cards h3{
+      color: #01579b;
+      font-weight: normal;
+      font-size: 22px;
+      padding: 15px 0 15px 14px;
+      text-align: left;
+}
+.cards p{
+      text-align: left;
+      padding: 0px 0 5px 14px;
+      font-size: 16px;
+
+}
+.card_3 ,.card_2 ,.card_1 {
+      max-width: 290px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 50px 0;
+}
+.card_3 img,.card_2 img,.card_1 img{
+      width: 270px;
+      height: 270px;
+      text-align: center;
+}
+.card_3 .barra,.card_2 .barra,.card_1 .barra{
+      width: 270px;
+      position: relative;
+      margin: 10px auto;
+}
+section.infos{
+      background: #0288d1;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+}
+.localização,.links,.media{
+      margin: 20px auto;
+}
+.links a,.media a{
+      text-decoration: underline;
+      font-size: 17px;
+}
+.localização h2,h4{
+      color: white;
+      padding: 5px 0;
+}
+.localização h2{
+      font-size: 30px;
+}
+.links{
+      display: grid;
+      grid-template-columns: 1fr;
+      color: white;
+}
+.links h2{
+      font-size: 30px;
+}
+.links a{
+      text-transform: capitalize;
+      padding: 3px 0;
+}
+.media{
+      display: grid;
+      grid-template-columns: 1fr;
+      color: white;
+}
+.media h2{
+      font-size: 30px;
+}
+.media i{
+      margin: 0 5px 0 3px;
+}
+.media a{
+      padding: 3px 0;
+}
+footer{
+      background-color: #01579b;
+      text-align: center;
+}
+footer h4{
+      text-decoration: underline;
+      cursor: pointer;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+      nav.desktop{
+            display: none;
+      }
+      nav.mobile{
+            display: block;
+      }
+      .xp-box{
+            grid-template-columns: 1fr;
+      }
+      .w50time,.w50sobre{
+            max-width: 100%;
+      }
+      .descrição-perfil{
+            max-width: 100%;
+      }
+      .descrição-perfil input{
+            margin: 10px 0;
+      }
+      .conteudo-inscreva-se{
+           display: grid;
+           grid-template-columns: 1fr;
+           text-align: center;
+      }
+      div.icon{
+            margin: 0 auto;
+            padding-bottom: 10px;
+      }
+      section.cards{
+            display: grid;
+            grid-template-columns:1fr;
+      }
+      .card_3 ,.card_2 ,.card_1 {
+            padding: 30px 0;
+      }
+      section.infos{
+            grid-template-columns: 1fr;
+            text-align: left;
+      }
+      .links{
+            position: relative;
+            left: -55px;
+      }
+      .media{
+            position: relative;
+            left: 9px;
+      }
+      
+}
+@media screen and (max-width: 640px) {
+      .descrição-perfil input{
+            margin: 10px 20%;
+      }
+}
+@media screen and (max-width:480px) {
+      section.experiencia .xp-content .barra{
+            margin-left: 7%;
+      }
+      .descrição-perfil input{
+            margin: 10px 27%;
+      }
+}
+      
+      @media screen and (max-width:375px) {
+            section.experiencia .xp-content .barra{
+                  margin-left: 14%;
+      }
+      .descrição-perfil input{
+            margin: 10px 0 ;
+      }
+      div.icon h2{
+            font-size: 23px;
+      }
+      div.icon h3{
+            font-size: 20px;
+      }
+      div.inputs > input[type=email]{
+            width: 250px;
+      }
+}
+      @media screen and (max-width:320px) {
+            section.experiencia .xp-content .barra{
+                  margin-left: 8%;
+      }
+      .descrição-perfil input{
+            margin: 10px;
+      }
+      div.icon h3{
+            font-size: 20px;
+            top: 25px;
+            left: 9px;
+      }
+      section.infos h2{
+            font-size: 26px;
+      }
+}
